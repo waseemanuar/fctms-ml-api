@@ -14,6 +14,7 @@ scaler = joblib.load("fctms_scaler.pkl")
 
 @app.route("/")
 def home():
+    print("🏠 Home route was called")
     return "✅ Welcome to FCTMS Workout Plan API!"
 
 @app.route("/predict", methods=["GET", "POST"])
